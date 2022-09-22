@@ -1,4 +1,4 @@
-*{
+*,*::after,*::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -64,6 +64,16 @@
    margin: 0.3rem 0 0.3rem 0;
    background-color:black;
    border-radius: 5px;
+   transition: all 0.4s ease-in;
+}
+.cross-hamburg .bar1{
+    transform: rotate(45deg) translate(8px,8px);
+}
+.cross-hamburg .bar2{
+    opacity: 0;
+}
+.cross-hamburg .bar3{
+    transform: rotate(-45deg) translate(8px,-8px);
 }
 #header .row nav .nav-main-container .nav-main-row ul li{
    list-style-type: none;
@@ -97,7 +107,7 @@
 #header .row nav .hero .hero-row{
     /* height: 80vh; */
     /* height: fit-content; */
-    background-color: yellow;
+    /* background-color: yellow; */
     justify-content:start;
 }
 #header .row nav .hero .hero-row .hero-col{
@@ -115,7 +125,7 @@
     top:0;
     left:0;
     /* z-index: -1; */
-    padding-left: 10%;
+    padding:0 5% 0 5%;
     height: 100%;
     width: 100%;
     /* transition: 0.5s ease; // transition is not working I donot know why??
@@ -147,9 +157,17 @@
 }
 .hero-col .hero-text .hero-text-link p{
     font-size: 1.2rem;
+    display: inline-block;
 }
 .hero-col .hero-text .hero-text-main .hero-text-link a{
     font-size: 1.2rem;
+}
+.hero-col .hero-text-link a{
+    text-decoration: none;
+    color: white;
+}
+.hero-col .hero-text-link a:hover{
+    color: rgba(255, 255, 255, 0.514);
 }
 .hero-col .hero-text-link span{
     position: relative;
@@ -181,7 +199,49 @@
     bottom: 30%;
     left: 30%;
 }
-.hero-col .hero-text-link a{
+/*------------------------ FACILITY SECTION --------------------*/
+#facility .row{
+    padding:2% 5% 2% 5%;
+    height:70vh ;
+}
+#facility .row .col{
+   height: 100%;
+}
+#facility .row .col1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+#facility .row .col1 h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#facility .row .col1  p{
+    margin-bottom: 2rem;
+}
+#facility .row .col1 a{
     text-decoration: none;
+    max-width: max-content;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+#facility .row .col1 a:hover{
+    background-color: rgba(255, 52, 52, 0.692);
     color: white;
+    border: 1px solid  rgba(255, 52, 52, 0.692);
+}
+#facility .row .col2{
+    width:50%;
+}
+#facility .row .col2 figure{
+    width: 100%;
+    height: 100%;
+}
+#facility .row .col2 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

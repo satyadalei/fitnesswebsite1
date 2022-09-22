@@ -1,18 +1,30 @@
 @media screen and (max-width:768px) {
+    /* HEADER SECTION */
     #header .row nav .nav-main-container .nav-main-row .burger{
         display: block;
     }
     #header .row nav .nav-main-container .nav-main-row ul{
+        display: none;
         position: absolute;
         flex-direction: column;
         right: 0;
         top: 23vh;
         z-index: 23;
-        background-color: red;
+        background-color: rgb(245, 245, 245);
         height: 77vh;
         width: 60%;
+        overflow: scroll;
     } 
+    #header .row nav .nav-main-container .nav-main-row ul.cross{
+        display: flex;
+    }
     #header .row nav .nav-main-container .nav-main-row ul li{
-        margin: 5rem 0 0.5rem 0;
+        margin: 2rem 0 2rem 0;
+    }
+    #header .row nav .hero .hero-row{
+     flex-direction: column;
+    }
+    #header .row nav .hero .hero-row .hero-col{
+        width: 100%;
     }
 }
