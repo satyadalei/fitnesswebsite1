@@ -1,0 +1,18 @@
+@media screen and (max-width:768px) {
+    #header .row nav .nav-main-container .nav-main-row .burger{
+        display: block;
+    }
+    #header .row nav .nav-main-container .nav-main-row ul{
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 23vh;
+        z-index: 23;
+        background-color: red;
+        height: 77vh;
+        width: 60%;
+    } 
+    #header .row nav .nav-main-container .nav-main-row ul li{
+        margin: 5rem 0 0.5rem 0;
+    }
+}
