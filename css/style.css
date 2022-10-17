@@ -218,6 +218,7 @@
 }
 #facility .row .col1  p{
     margin-bottom: 2rem;
+    font-size: 100%;
 }
 #facility .row .col1 a{
     text-decoration: none;
@@ -235,6 +236,7 @@
 }
 #facility .row .col2{
     width:50%;
+    position: relative;
 }
 #facility .row .col2 figure{
     width: 100%;
@@ -244,4 +246,71 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+#facility .row .col2 .pulse-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.473); */
+}
+#facility .row .col2 .pulse{
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 89%;
+  color: white;
+}
+#facility .row .col2 .pulse1{
+    /* position: absolute; */
+    top: 15%;
+    left: 50%;
+}
+#facility .row .col2 .pulse2{
+    /* position: absolute; */
+    top: 62%;
+    left: 20%;
+}
+#facility .row .col2 .pulse3{
+    /* position: absolute; */
+    top: 30%;
+    left: 20%;
+}
+#facility .row .col2 .pulse4{
+    /* position: absolute; */
+    top: 50%;
+    left: 65%;   
+}
+#facility .row .col2 .pulse5{
+    /* position: absolute; */
+    top: 60%;
+    left: 45%;   
+}
+#facility .row .col2 .pulse6{
+    /* position: absolute; */
+    top: 70%;
+    left: 75%;   
+}
+#facility .row .col2 .pulse::before{
+    content: "";
+    display: block;
+    background-color: rgba(255, 0, 0, 0.507);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    animation: pulsate 2s ease infinite;
+}
+@keyframes pulsate{
+    100%{
+        opacity: 0.3;
+        transform: scale(3);
+    }
 }
